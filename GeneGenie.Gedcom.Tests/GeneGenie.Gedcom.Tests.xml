@@ -373,6 +373,23 @@
             Tests that the spousal sealing record can be added, removed and round tripped to storage.
             </summary>
         </member>
+        <member name="T:GeneGenie.Gedcom.Tests.RecordReaderTests.LineTerminatorTests">
+            <summary>
+            Tests for verifying GEDCOM line terminators can be found.
+            </summary>
+        </member>
+        <member name="M:GeneGenie.Gedcom.Tests.RecordReaderTests.LineTerminatorTests.Line_delimiter_can_be_parsed(System.String,System.String)">
+            <summary>
+            Tests to ensure we can detect if the source GEDCOM file has CR, CRLF or LF terminated lines.
+            </summary>
+            <param name="text"></param>
+            <param name="expectedTerminator"></param>
+        </member>
+        <member name="M:GeneGenie.Gedcom.Tests.RecordReaderTests.LineTerminatorTests.System_default_line_delimiter_is_used">
+            <summary>
+            Tests that an if a line terminator is not found in the text, the default system newline is used.
+            </summary>
+        </member>
         <member name="T:GeneGenie.Gedcom.Date.Tests.GedcomDateCompareTest">
             <summary>
             Checks that the date comparision works, which is complex as GEDCOM dates can have a lot of prefixes.
